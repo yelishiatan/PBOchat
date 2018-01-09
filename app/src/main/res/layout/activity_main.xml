@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yelishia.pwebchat.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFACD"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etKetik"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:maxHeight="88dp"
+            android:inputType="textMultiLine"
+            android:hint="Write a messsage..."/>
+
+            <ImageView
+                android:id="@+id/btSend"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:maxHeight="88dp"
+                android:onClick="sendButtonClicked"
+                tools:ignore="OnClick"
+                android:layout_gravity="center_vertical"
+                android:padding="7dp"
+                android:src="@drawable/sent2"/>
+
+    </LinearLayout>
+
+</LinearLayout>
